@@ -6,6 +6,7 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 
 contract EmuNFT is ERC721URIStorage {
   uint256 public tokenCounter;
+
   event CreatedEmuNFT(uint256 indexed tokenId, string tokenURI);
 
   constructor() ERC721("Emu birds", "emuNFT") {
